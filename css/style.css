@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #00bfa6;
+
+}
+
+.container {
+    margin: 1.5rem 7rem;
+    margin-top: 3rem;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.left img {
+    height: 530px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right h1 {
+    font-size: 2.4rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.right p {
+    color: #444;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.input-field {
+    border-radius: 3.43rem;
+    background-color: #f0f0f0;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    padding-left: 0.4rem;
+}
+
+.input-field i {
+
+    color: #acacac;
+    font-size: 1.2rem;
+    
+    padding: 0.5rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+    line-height: 1;
+    font-size: 1.2rem;
+
+}
+
+input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.btn {
+    width: 150px;
+    height: 49px;
+    outline: none;
+    border: none;
+    border-radius: 3rem;
+    background-color: #20dbc2;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: #00bfa6;
+}
+
+.icons i {
+    margin: 0.7rem;
+    font-size: 1.5rem;
+    border: 2px solid #333;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: #333;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.icons i:hover {
+    color: #20dbc2;
+    border-color: #00bfa6;
+}
+@media(max-width:598px) {
+    .left{
+        display: none;
+    }
+   
+    .container{
+        
+        margin: 0.8rem;
+        margin-top: 5rem;
+    }
+    
+   
+}
+@media(max-width:425px) {
+   
+    .container{
+       
+        margin:0.5rem;
+        margin-top: 5rem;
+    }
+}
+@media(max-width:1060px) {
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+    }
+   
+}
+@media(max-width:340px){
+    .input-field{
+        display: flex;
+
+    }
+    input{
+        font-size: 1rem;
+    }
+    
+
+}
